@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency System 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/icon2.png">
+    <link rel="stylesheet" href="emg.css">
+</head>
+<body>
+   <div class="uperMenu">
+        <div class="backBox">
+            <button id="back" onclick="window.location.href='/home.html'">	&lt; חזור</button>
+        </div>
+        <div id="date-section" class="sectionMenu">
+            <p id="info">00:00:00 00/00/00</p>
+        </div>
+        <div id="control-section" class="sectionMenu">
+            <div>
+                <button id="start">התחל</button>
+                <button id="reset">הפעל מחדש</button>
+            </div>
+            <div>
+                <button id="alertButton">התראה</button>
+                <button>עדכן</button>
+            </div>
+        </div>
+        <div id="timer-section" class="sectionMenu">
+            <div>
+                <p class="timerText">זמן ליציאה מהממ"ד:</p>
+                <p id="timer">00:00:00</p>
+            </div>
+        </div>
+   </div> 
+   <div class="screen">
+        <div class="mediaBox">
+            <iframe scrolling="no" class="news" width="100%" height="100%" src="https://www.mako.co.il/AjaxPage?jspName=embedHTML5video.jsp&galleryChannelId=3bf5c3a8e967f510VgnVCM2000002a0c10acRCRD&videoChannelId=8bf955222beab610VgnVCM100000700a10acRCRD&vcmid=1e2258089b67f510VgnVCM2000002a0c10acRCRD"
+            frameborder="0" allowfullscreen id="mainScreen" autoplay></iframe>
+        </div>
+        <div class="alertBox">
+                <div class="buttonBox" id="switchScreens"><span class="material-symbols-outlined">
+                    open_in_new
+                    </span></div>
+                <div class="buttonBox" id="alertsTitle"><span class="material-symbols-outlined">
+                    info</span>התרעות רקטות וטילים</div>
+            <iframe id="alerts" class="alerts" scrolling="no" height="100%" width="100%" src="https://www.tzevaadom.co.il/"></iframe>
+        </div>
+   </div>
+       <div class="alertLight">
+    </div>
+    <div class="areaBox-hide" id="areaBox">
+        <div>
+            <span class="material-symbols-outlined areaIcon">campaign</span>
+            <h1 class="areaTitle">צבע אדום באזורך</h1>
+            <p class="areaP">יש להכנס בהקדם האפשרי למרחב המוגן, לסגור את הדלת ולחכות למשך 10:00 דקות</p>
+        </div>
+    </div>
+   <script src="javaScript/date.js"></script>
+   <script src="javaScript/timer.js"></script>
+   <script src="javaScript/media.js"></script>
+   <script src="javaScript/alerts.js"></script>
+</body>
+</html>
