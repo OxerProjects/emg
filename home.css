@@ -1,0 +1,97 @@
+:root {
+    --background-color: #212327; 
+    --menu-color: #161618; 
+    --border-color: #1F1D24;
+    --alert-color: #ED4040;
+}
+
+body {
+    background-color: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.uperMenu {
+    background-color: var(--menu-color);  
+    height: 100px; 
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: var(--menu-color);
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.title {
+    color: white;
+    direction: rtl;
+}
+
+.tab {
+    height: 90%;
+    width: 24%;
+    background-color: #ffffff;
+    background-color: rgba(0,0,0,.5);
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tab:hover {
+    height: 93%; 
+    cursor: pointer;   
+}
+
+#alerts {
+    background-image: url("images/alerts.jpeg");
+}
+
+#tv {
+    background-image: url("images/tv.jpg");
+}
+
+#data {
+    background-image: url("images/data.jpg");
+}
+
+#gabso {
+    background-image: url("images/gabso.png");
+}
+
+.text2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.tabBack {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
